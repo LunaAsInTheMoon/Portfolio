@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#100d2b">
-  <meta name="description" content="The portfolio of Jordan Lee, an independent designer making thoughtful digital experiences.">
-  <title>Jordan Lee — Independent Designer</title>
+  <meta name="description" content="Luna Lloyd is a game developer with a BSc in Computer Science specializing in AI and an MSc in Game Development. Creator of Warped and AmazeBalls.">
+  <title>Luna Lloyd — Game Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sixtyfour+Convergence&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -118,6 +118,19 @@
     .project h3 { margin: 0; font-family: var(--headline); font-size: 15px; line-height: 1.5; font-weight: 400; }
     .project-meta { color: var(--muted); font-size: 10px; text-align: right; }
     .project a { text-decoration: none; }
+    .project-description { margin: 10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+    .upcoming-card {
+      display: flex;
+      min-height: 100%;
+      aspect-ratio: 1.35;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 22px;
+      border: 1px solid var(--line);
+      background: radial-gradient(ellipse at 80% 15%, rgb(255 91 214 / 23%), transparent 48%), linear-gradient(145deg, #211c4b, #100d2b);
+    }
+    .upcoming-card .project-meta { color: var(--red); }
+    .upcoming-card h3 { max-width: 260px; }
 
     .about {
       display: grid;
@@ -171,29 +184,29 @@
 </head>
 <body>
   <header class="wrap topbar">
-    <a class="wordmark" href="#home" aria-label="Jordan Lee, home">J<span>.</span>L</a>
+    <a class="wordmark" href="#home" aria-label="Luna Lloyd, home">L<span>.</span>L</a>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#work">Selected work</a>
+      <a href="#work">Games</a>
       <a href="#about">About</a>
-      <a class="contact-link" href="mailto:hello@jordanlee.design">Get in touch ↗</a>
+      <a class="contact-link" href="https://absolunit.itch.io/">Find me on itch.io ↗</a>
     </nav>
   </header>
 
   <main>
     <section class="wrap hero" id="home" aria-labelledby="intro-title">
       <div class="hero-copy">
-        <p class="eyebrow">Independent designer · Brooklyn, NY</p>
-        <h1 id="intro-title">Good ideas,<br>made <em>real.</em></h1>
-        <p class="intro">I’m Jordan, a designer and creative partner building thoughtful digital experiences for people and the planet.</p>
+        <p class="eyebrow">Game developer · AI &amp; game systems</p>
+        <h1 id="intro-title">Worlds to play.<br>Systems to <em>break.</em></h1>
+        <p class="intro">I’m Luna Lloyd, a game developer blending a background in AI with a love of making playful, unexpected worlds. Two self-published games are out now, with more on the way.</p>
         <div class="hero-links">
-          <a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="mailto:hello@jordanlee.design">Let’s talk ↗</a>
+          <a class="button" href="#work">Play my games <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://absolunit.itch.io/">More on itch.io ↗</a>
         </div>
       </div>
       <figure class="portrait-wrap">
-        <img class="portrait" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Portrait of Jordan Lee">
+        <img class="portrait" src="https://img.itch.zone/aW1nLzEzMTE0ODM2LnBuZw==/original/lGFPP6.png" alt="Warped game artwork">
         <figcaption class="portrait-caption availability">
-          <span>Currently taking on new projects</span>
+          <span>Two games published · more in development</span>
           <span>2026</span>
         </figcaption>
       </figure>
@@ -203,29 +216,31 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <p class="section-label">A few things I’ve made</p>
-            <h2 id="work-title">Selected work</h2>
+            <p class="section-label">Made to be played</p>
+            <h2 id="work-title">Games</h2>
           </div>
-          <p class="section-note">A mix of digital products, visual identities, and ideas brought to life with good people.</p>
+          <p class="section-note">Two self-published games are available now. There’s more in development.</p>
         </div>
         <div class="projects">
           <article class="project">
-            <a href="mailto:hello@jordanlee.design?subject=Northstar%20project">
-              <img class="project-image" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Sunlit, collaborative studio workspace" loading="lazy">
-              <div class="project-info"><h3>Northstar</h3><span class="project-meta">Brand identity · 2025</span></div>
+            <a href="https://absolunit.itch.io/warped" target="_blank" rel="noopener noreferrer">
+              <img class="project-image" src="https://img.itch.zone/aW1nLzEzMTE0ODM2LnBuZw==/original/lGFPP6.png" alt="Warped game artwork" loading="lazy">
+              <div class="project-info"><h3>Warped</h3><span class="project-meta">Unity · Demo</span></div>
+              <p class="project-description">A demo of a text-to-speech tool for Unity, created as Luna’s MSc final project.</p>
             </a>
           </article>
           <article class="project">
-            <a href="mailto:hello@jordanlee.design?subject=Common%20Ground%20project">
-              <img class="project-image" src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=80" alt="Carefully arranged printed materials on a desk" loading="lazy">
-              <div class="project-info"><h3>Common Ground</h3><span class="project-meta">Digital product · 2025</span></div>
+            <a href="https://absolunit.itch.io/amazeballs" target="_blank" rel="noopener noreferrer">
+              <img class="project-image" src="https://img.itch.zone/aW1nLzEzOTY0MjQwLnBuZw==/original/7PrGUE.png" alt="AmazeBalls game artwork" loading="lazy">
+              <div class="project-info"><h3>AmazeBalls</h3><span class="project-meta">Time trial · Maze</span></div>
+              <p class="project-description">Race the clock as you guide a ball through a maze.</p>
             </a>
           </article>
-          <article class="project">
-            <a href="mailto:hello@jordanlee.design?subject=Forma%20project">
-              <img class="project-image" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80" alt="Bright modern workspace with minimalist furniture" loading="lazy">
-              <div class="project-info"><h3>Forma</h3><span class="project-meta">Art direction · 2024</span></div>
-            </a>
+          <article class="project upcoming">
+            <div class="upcoming-card">
+              <span class="project-meta">In development</span>
+              <h3>More worlds<br>coming soon.</h3>
+            </div>
           </article>
         </div>
       </div>
@@ -233,24 +248,24 @@
 
     <section class="wrap about" id="about" aria-labelledby="about-title">
       <div>
-        <p class="section-label">A little about me</p>
-        <h2 id="about-title">Small teams.<br>Big care.</h2>
+        <p class="section-label">About the developer</p>
+        <h2 id="about-title">Code meets<br>play.</h2>
       </div>
       <div class="about-copy">
-        <p>I partner with people who want to make the world a little more considered.</p>
-        <p>Over the last eight years, I’ve helped early-stage teams find their voice, shaped products from first sketch to launch, and made complex things feel simple. I believe the best work comes from curiosity, clear thinking, and making things together.</p>
-        <p>Outside the studio, you’ll find me collecting old cookbooks, taking the long way home, or trying a new pasta recipe.</p>
+        <p>I’m Luna Lloyd, a game developer with a BSc in Computer Science, specializing in AI, and an MSc in Game Development.</p>
+        <p>I bring together technical curiosity and a love of games to create interactive experiences. I’ve self-published two games so far: <a href="https://absolunit.itch.io/warped" target="_blank" rel="noopener noreferrer">Warped</a>, a Unity text-to-speech demo, and <a href="https://absolunit.itch.io/amazeballs" target="_blank" rel="noopener noreferrer">AmazeBalls</a>, a time-trial maze game.</p>
+        <p>More games are in development. Follow along on <a href="https://absolunit.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a>.</p>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap footer-inner">
-      <p>© 2026 Jordan Lee · Made with care</p>
+      <p>© 2026 Luna Lloyd · Game developer</p>
       <div class="footer-links">
-        <a href="https://www.instagram.com/">Instagram ↗</a>
-        <a href="https://www.linkedin.com/">LinkedIn ↗</a>
-        <a href="mailto:hello@jordanlee.design">Email ↗</a>
+        <a href="https://absolunit.itch.io/warped" target="_blank" rel="noopener noreferrer">Warped ↗</a>
+        <a href="https://absolunit.itch.io/amazeballs" target="_blank" rel="noopener noreferrer">AmazeBalls ↗</a>
+        <a href="https://absolunit.itch.io/" target="_blank" rel="noopener noreferrer">itch.io ↗</a>
       </div>
     </div>
   </footer>
