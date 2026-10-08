@@ -2,7 +2,7 @@
 
 A lightweight one-page portfolio for Luna Lloyd, a game developer with a BSc in Computer Science specializing in AI and an MSc in Game Development.
 
-This site highlights Luna's self-published games, including Warped and AmazeBalls, and links out to their itch.io page.
+This site highlights Luna's self-published games, including Warped, AmazeBalls, and Silvestris, and links out to their itch.io page.
 
 ## About the page
 
@@ -19,4 +19,5 @@ View the portfolio on GitHub Pages: https://lunaasinthemoon.github.io/
 
 - Warped — Unity text-to-speech demo
 - AmazeBalls — time-trial maze game
+- Silvestris — Kingdom-inspired strategy prototype
 - More projects in development
